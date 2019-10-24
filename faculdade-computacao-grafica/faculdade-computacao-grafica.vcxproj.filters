@@ -21,5 +21,8 @@
     <ClCompile Include="Lista05_Exercicio01.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Lista06_Exercicio05.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

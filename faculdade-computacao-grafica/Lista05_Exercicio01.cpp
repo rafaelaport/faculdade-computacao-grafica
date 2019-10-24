@@ -1,4 +1,4 @@
-#include <glut.h>
+/*#include <glut.h>
 
 void desenha()
 {
@@ -27,5 +27,5 @@ void main(int argc, char **argv)
 	gluOrtho2D(0, 400, 0, 400);
 	glutDisplayFunc(desenha);
 	glutMainLoop();
-}
+}*/
 
