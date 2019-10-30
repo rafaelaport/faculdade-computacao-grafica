@@ -1,15 +1,18 @@
-﻿Build started 23/10/2019 21:11:29.
+﻿Build started 25/10/2019 18:43:45.
      1>Project "C:\GIT\faculdade-computacao-grafica\faculdade-computacao-grafica\faculdade-computacao-grafica.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Lista06_Exercicio05.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Lista06_Exercicio05.cpp Lista07_Exercicio03.cpp
+         Lista07_Exercicio03.cpp
          Lista06_Exercicio05.cpp
+         Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\GIT\faculdade-computacao-grafica\Debug\faculdade-computacao-grafica.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\GIT\faculdade-computacao-grafica\Debug\faculdade-computacao-grafica.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\GIT\faculdade-computacao-grafica\Debug\faculdade-computacao-grafica.lib" /MACHINE:X86 Debug\Lista05_Exercicio01.obj
          Debug\Lista05_Exercicio03.obj
          Debug\Lista06_Exercicio05.obj
+         Debug\Lista07_Exercicio03.obj
          faculdade-computacao-grafica.vcxproj -> C:\GIT\faculdade-computacao-grafica\Debug\faculdade-computacao-grafica.exe
      1>Done Building Project "C:\GIT\faculdade-computacao-grafica\faculdade-computacao-grafica\faculdade-computacao-grafica.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.15
+Time Elapsed 00:00:04.40
