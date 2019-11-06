@@ -1,10 +1,11 @@
-/*#include <vector>
+#include <vector>
 #include <glut.h>
 #include <stdio.h>
 
 using namespace std;
 
-float DIM = 501;
+float DIM = 500;
+float size = 10;
 
 vector<int> px;
 vector<int> py;
@@ -13,6 +14,8 @@ vector<int> py;
 float R = 0.3;
 float G = 0.2;
 float B = 0.7;
+
+int aux = 0;
 
 void ExibePoligono()
 {
@@ -46,6 +49,7 @@ void teclado(unsigned char key, int x, int y)
 	int PX, PY;
 
 	switch (key)  {
+
 	case 'P':
 	case 'p':
 		px.clear();
@@ -63,6 +67,63 @@ void teclado(unsigned char key, int x, int y)
 			px.push_back(PX);
 			py.push_back(PY);
 		}
+
+		break;
+
+	case 'R':
+	case 'r':
+
+		R = 1; G = 0; B = 0;
+
+		break;
+
+
+
+	case 'G':
+	case 'g':
+
+		R = 0; G = 1; B = 0;
+
+		break;
+
+
+
+	case 'B':
+	case 'b':
+
+		R = 0; G = 0; B = 1;
+
+		break;
+
+	case 'C':
+	case 'c':
+
+		printf("Cor: RGB");
+
+		printf("\nR: ");
+
+		scanf_s("%f", &R);
+
+
+
+		printf("G: ");
+
+		scanf_s("%f", &G);
+
+
+
+		printf("B: ");
+
+		scanf_s("%f", &B);
+
+		printf("\n");
+
+		break;
+
+	case 'D':
+	case 'd':
+
+		aux = 0;
 
 		break;
 
@@ -89,11 +150,7 @@ void mouse(int b, int state, int x, int y)
 		}
 
 		break;
-
-	case GLUT_LEFT_BUTTON:
-
-
-		break;
+		
 	}
 
 	Display();
@@ -109,7 +166,7 @@ void main(int argc, char **argv)
 	glutCreateWindow("POLYGON");
 	glutKeyboardFunc(teclado);
 	glutMouseFunc(mouse);
-	gluOrtho2D(0, 500, 500, 0);
+	gluOrtho2D(-size, size, -size, size);
 	glutDisplayFunc(Display);
 	glutMainLoop();
-}*/
+}

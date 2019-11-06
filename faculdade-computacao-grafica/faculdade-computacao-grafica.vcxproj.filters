@@ -30,5 +30,8 @@
     <ClCompile Include="Lista08_Exercicio01.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Lista08_Exercicio02.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
