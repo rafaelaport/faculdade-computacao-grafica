@@ -10,38 +10,35 @@ float size = 10;
 vector<int> px;
 vector<int> py;
 
-
 float R = 0.3;
 float G = 0.2;
 float B = 0.7;
 
-int aux = 0;
-
 void ExibePoligono()
 {
-
 	glColor3f(R, G, B);
 	glBegin(GL_POLYGON);
 
 	for (int i = 0; i < px.size(); i++){
+
 		glVertex2d(px[i], py[i]);
+
 	}
 
 	glEnd();
 
 }
 
-
 void Display()
 {
 	glClearColor(1.0, 1.0, 1.0, 0.0);
 	glClear(GL_COLOR_BUFFER_BIT);
-
 	ExibePoligono();
-
 	glFlush();
 
 }
+
+
 
 void teclado(unsigned char key, int x, int y)
 {
@@ -52,8 +49,10 @@ void teclado(unsigned char key, int x, int y)
 
 	case 'P':
 	case 'p':
+
 		px.clear();
 		py.clear();
+
 		printf("\nNumero de Vertices: ");
 		scanf_s("%d", &n);
 
@@ -66,6 +65,7 @@ void teclado(unsigned char key, int x, int y)
 
 			px.push_back(PX);
 			py.push_back(PY);
+
 		}
 
 		break;
@@ -77,16 +77,12 @@ void teclado(unsigned char key, int x, int y)
 
 		break;
 
-
-
 	case 'G':
 	case 'g':
 
 		R = 0; G = 1; B = 0;
 
 		break;
-
-
 
 	case 'B':
 	case 'b':
@@ -101,21 +97,13 @@ void teclado(unsigned char key, int x, int y)
 		printf("Cor: RGB");
 
 		printf("\nR: ");
-
 		scanf_s("%f", &R);
 
-
-
 		printf("G: ");
-
 		scanf_s("%f", &G);
 
-
-
 		printf("B: ");
-
 		scanf_s("%f", &B);
-
 		printf("\n");
 
 		break;
@@ -123,7 +111,8 @@ void teclado(unsigned char key, int x, int y)
 	case 'D':
 	case 'd':
 
-		aux = 0;
+		px.clear();
+		py.clear();
 
 		break;
 
@@ -132,30 +121,29 @@ void teclado(unsigned char key, int x, int y)
 	Display();
 }
 
-
 void mouse(int b, int state, int x, int y)
 {
+	float X, Y;
+
 	switch (b) {
 
 	case GLUT_RIGHT_BUTTON:
 
-		if (state == GLUT_UP){
+		if (state == GLUT_DOWN) {
 
-			printf("\n\nx[%d] = %d ", x);
-			printf("\n\ny[%d] = %d ", y);
+			X = x / 25.0 - 10.0;
+			Y = y / 25.0 - 10.0;
 
-			px.push_back(x);
-			py.push_back(y);
+			px.push_back(X);
+			py.push_back(-Y);
+
+			Display();
 
 		}
 
 		break;
-		
 	}
-
-	Display();
 }
-
 
 void main(int argc, char **argv)
 {
@@ -169,4 +157,5 @@ void main(int argc, char **argv)
 	gluOrtho2D(-size, size, -size, size);
 	glutDisplayFunc(Display);
 	glutMainLoop();
+
 }
