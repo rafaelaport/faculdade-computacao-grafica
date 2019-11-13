@@ -1,9 +1,11 @@
-﻿Build started 06/11/2019 20:21:23.
+﻿Build started 13/11/2019 20:24:33.
      1>Project "C:\GIT\faculdade-computacao-grafica\faculdade-computacao-grafica\faculdade-computacao-grafica.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Lista08_Exercicio02.cpp
-         Lista08_Exercicio02.cpp
-     1>c:\git\faculdade-computacao-grafica\faculdade-computacao-grafica\lista08_exercicio02.cpp(26): warning C4018: '<' : signed/unsigned mismatch
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Lista09_ExercicioExtra.cpp
+         Lista09_ExercicioExtra.cpp
+     1>c:\git\faculdade-computacao-grafica\faculdade-computacao-grafica\lista09_exercicioextra.cpp(63): warning C4129: 'e' : unrecognized character escape sequence
+     1>c:\git\faculdade-computacao-grafica\faculdade-computacao-grafica\lista09_exercicioextra.cpp(87): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\git\faculdade-computacao-grafica\faculdade-computacao-grafica\lista09_exercicioextra.cpp(103): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\GIT\faculdade-computacao-grafica\Debug\faculdade-computacao-grafica.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\GIT\faculdade-computacao-grafica\Debug\faculdade-computacao-grafica.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\GIT\faculdade-computacao-grafica\Debug\faculdade-computacao-grafica.lib" /MACHINE:X86 Debug\Lista05_Exercicio01.obj
          Debug\Lista05_Exercicio03.obj
@@ -11,9 +13,10 @@
          Debug\Lista07_Exercicio03.obj
          Debug\Lista08_Exercicio01.obj
          Debug\Lista08_Exercicio02.obj
+         Debug\Lista09_ExercicioExtra.obj
          faculdade-computacao-grafica.vcxproj -> C:\GIT\faculdade-computacao-grafica\Debug\faculdade-computacao-grafica.exe
      1>Done Building Project "C:\GIT\faculdade-computacao-grafica\faculdade-computacao-grafica\faculdade-computacao-grafica.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.12
+Time Elapsed 00:00:00.70
